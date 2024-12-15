@@ -51,4 +51,4 @@
     2. เพื่อพัฒนาระบบแจ้งเตือน ตรวจจับ ติดตามและรู้จำบุคคลหรือรถต้องสงสัยด้วยเทคโนโลยีปัญญาประดิษฐ์
 
 ## ** 🇵​​🇷​​🇪​​🇸​​🇪​​🇳​​🇹​​🇦​​🇹​​🇮​​🇴​​🇳​ ​🇻​​🇮​​🇩​​🇪​​🇴​ **
-[![Watch the video](https://youtu.be/1Rm5qEBoEYU)
+[![Watch the video](http://img.youtube.com/vi/1Rm5qEBoEYU/hqdefault.jpg)](https://youtu.be/1Rm5qEBoEYU)
