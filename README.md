@@ -7,7 +7,7 @@
 3 | AI for detecting code plagiarism | [Code2Vec to detect code clone](https://github.com/Meaiie/PMU-B_PersonalAI/blob/main/PMU_B_CodingAI_CodeCloneDetection_Workshop.ipynb) | [Lecture3](https://github.com/Meaiie/PMU-B_PersonalAI/blob/main/Codeclone.pdf)
 4 | Mental disorder detection from social media data | [NLP classifcation](https://github.com/Meaiie/PMU-B_PersonalAI/blob/main/Social_E_san_coding.ipynb) | [Lecture4](https://github.com/Meaiie/PMU-B_PersonalAI/blob/main/Social_NLP.pdf)
 5 | BiTNet: AI for diagnosing ultrasound image | [EffcientNet: Image Classifcaiton](https://github.com/Meaiie/PMU-B_PersonalAI/blob/main/PMUB_Personal_AI_Image_classification_EfficientNetB5.ipynb) | [Lecture5](https://github.com/Meaiie/PMU-B_PersonalAI/blob/main/L_BitNET.pdf)
-6 | AI for arresting criminals | [Yolo Detection // Face recognition](https://github.com/Meaiie/PMU-B_PersonalAI/blob/main/ObjectDetection.pdf) | [Lecture6](https://github.com/Meaiie/PMU-B_PersonalAI/commit/fca4da56a4f08d017b25f5d93234697050ad134d)
+6 | AI for arresting criminals | [Yolo Detection // Face recognition](https://github.com/Meaiie/PMU-B_PersonalAI/blob/main/ObjectDetection.pdf) | [Lecture6](https://github.com/Meaiie/PMU-B_PersonalAI/blob/main/Train_Yolov8_Object_Detection_on_Custom_Dataset.ipynb)
 
 ## **🇨​​🇴​​🇺​​🇷​​🇸​​🇪​ ​🇩​​🇪​​🇹​​🇦​​🇮​​🇱​​🇸​**
   * ## ** xᴘᴏʀᴇ: ᴀɪ-ᴘᴏᴡᴇʀᴇᴅ ᴀᴘᴘ ꜰᴏʀ ʙɪᴏɪɴꜰᴏʀᴍᴀᴛɪᴄꜱ **
