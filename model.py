@@ -11,21 +11,61 @@ from logger import get_logger
 
 def simple_model():
     model = nn.Sequential(
-        nn.Conv1d(in_channels=1, out_channels=32, kernel_size=50, stride=6, bias=False),
-        nn.BatchNorm1d(num_features=32, eps=0.001, momentum=0.01),
+        # ขนาดตัวกรอง 50, จำนวนฟิลเตอร์ 128, stride 25
+        nn.Conv1d(in_channels=1, out_channels=128, kernel_size=50, stride=25, bias=False),
+        
+        # Batch Normalization
+        nn.BatchNorm1d(num_features=128, eps=0.001, momentum=0.01),
+        
+        # Activation Function ReLU เพื่อเพิ่ม non-linearity
         nn.ReLU(inplace=True),
+        
+        # MaxPooling Layer ขนาด pooling 8 และ stride 8
         nn.MaxPool1d(kernel_size=8, stride=8),
+        
+        # Dropout ลด overfitting ด้วยการสุ่มปิด neuron 50%
         nn.Dropout(p=0.5),
-        nn.Conv1d(in_channels=32, out_channels=64, kernel_size=8, stride=1, bias=False),
-        nn.BatchNorm1d(num_features=64, eps=0.001, momentum=0.01),
+        
+        # Conv1D Layer ขนาดตัวกรอง 1, จำนวนฟิลเตอร์ 128, stride 1, ไม่มี bias
+        nn.Conv1d(in_channels=128, out_channels=128, kernel_size=1, stride=1, bias=False),
+        
+        # Batch Normalization
+        nn.BatchNorm1d(num_features=128, eps=0.001, momentum=0.01),
+        
+        # ReLU Activation
         nn.ReLU(inplace=True),
-        nn.MaxPool1d(kernel_size=8, stride=8),
+        
+        # Conv1D Layer ขนาดตัวกรอง 1, จำนวนฟิลเตอร์ 128, stride 1, ไม่มี bias
+        nn.Conv1d(in_channels=128, out_channels=128, kernel_size=1, stride=1, bias=False),
+        
+        # Batch Normalization
+        nn.BatchNorm1d(num_features=128, eps=0.001, momentum=0.01),
+        
+        # ReLU Activation
+        nn.ReLU(inplace=True),
+        
+        # Conv1D Layer ขนาดตัวกรอง 1, จำนวนฟิลเตอร์ 128, stride 1, ไม่มี bias
+        nn.Conv1d(in_channels=128, out_channels=128, kernel_size=1, stride=1, bias=False),
+        
+        # Batch Normalization
+        nn.BatchNorm1d(num_features=128, eps=0.001, momentum=0.01),
+        
+        # ReLU Activation
+        nn.ReLU(inplace=True),
+        
+        # MaxPooling Layer ขนาด pooling 4 และ stride 4
+        nn.MaxPool1d(kernel_size=4, stride=4),
+        
+        # Dropout ลด overfitting ด้วยการสุ่มปิด neuron 50%
         nn.Dropout(p=0.5),
+        
+        # Flatten Layer แปลงข้อมูลจาก 3D tensor ให้เป็น vector
         nn.Flatten(),
+        
+        # Fully Connected Layer รับ input 384 และ output 5 (เช่น จำนวน class)
         nn.Linear(in_features=384, out_features=5, bias=False)
     )
     return model
-
 
 class SimpleModel:
 
